@@ -1,16 +1,21 @@
+import { Link } from "react-router-dom";
+import App from "../App";
+
 export default function Header(props) {
   return (
     <div className=" w-11/12  flex lg:justify-around items-center lg:flex-row flex-col">
-      <div className="flex py-6 mx-0 lg:mx-28">
-        <img
-          className="w-32 cursor-pointer"
-          id="logo"
-          src="./images/humanslogo.png"
-        />
-        <p className="font-pasifico text-6xl drop-shadow-xl text-white flex items-center cursor-pointer">
-          Clothing Co.
-        </p>
-      </div>
+      <Link to={App}>
+        <div className="flex py-6 mx-0 lg:mx-28">
+          <img
+            className="w-32 cursor-pointer"
+            id="logo"
+            src="./images/humanslogo.png"
+          />
+          <p className="font-pasifico text-6xl drop-shadow-xl text-white flex items-center cursor-pointer">
+            Clothing Co.
+          </p>
+        </div>
+      </Link>
       {props.windowSize < 1150 && (
         <div className="flex justify-center ml-14 md:ml-0 mb-14 md:mb-0">
           <div>
@@ -149,24 +154,30 @@ export default function Header(props) {
 
       {props.windowSize >= 1150 && (
         <div className="flex items-center justify-around text-white">
-          <button className="bg-blue-400 drop-shadow-lg  transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full ">
-            <span>Womans</span>
-            <br></br>
-            <span>Style</span>
-          </button>
-          <button className="mx-20 bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-12 rounded-full ">
-            <span>Mens</span>
-            <br></br>
-            <span>Style</span>
-          </button>
-          <button className="bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full flex justify-center items-center">
-            <div>
-              <span>Shopping</span>
+          <Link to="WomansStyle">
+            <button className="bg-blue-400 drop-shadow-lg  transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full ">
+              <span>Womans</span>
               <br></br>
-              <span>Bag</span>
-            </div>
-            <img className=" ml-4 w-6" src="./images/whitebag.png" />
-          </button>
+              <span>Style</span>
+            </button>
+          </Link>
+          <Link to="MensStyle">
+            <button className="mx-20 bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-12 rounded-full ">
+              <span>Mens</span>
+              <br></br>
+              <span>Style</span>
+            </button>
+          </Link>
+          <Link to="ShoppingCart">
+            <button className="bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full flex justify-center items-center">
+              <div>
+                <span>Shopping</span>
+                <br></br>
+                <span>Bag</span>
+              </div>
+              <img className=" ml-4 w-6" src="./images/whitebag.png" />
+            </button>
+          </Link>
         </div>
       )}
     </div>

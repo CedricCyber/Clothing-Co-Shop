@@ -1,6 +1,6 @@
 export default function Title() {
   return (
-    <div>
+    <div className=" ">
       <div className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer">
         <h2>Our Fall collection is here</h2>
         <h2>Check out the new styles</h2>

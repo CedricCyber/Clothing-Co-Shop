@@ -5,6 +5,8 @@ import "./App.css";
 import Carousel from "./components/Carousel";
 import Title from "./components/Title";
 import Grid from "./components/Grid";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
   // Mobile Dropdown Menu
@@ -38,6 +40,10 @@ function App() {
     <img src={image.imagePath} key={index} className="w-20"></img>
   ));
 
+  // Shopping Cart functionality
+
+  const [cart, setCart] = useState([]);
+
   return (
     <div className="background">
       <Header
@@ -46,8 +52,8 @@ function App() {
         position={position}
         opacity={opacity}
       />
-
-      <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto">
+      <Link to="/gabagunta">Gaba</Link>
+      <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
         <Title />
         <Carousel />
       </div>
