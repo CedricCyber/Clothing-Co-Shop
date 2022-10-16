@@ -5,8 +5,7 @@ import "./App.css";
 import Carousel from "./components/Carousel";
 import Title from "./components/Title";
 import Grid from "./components/Grid";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   // Mobile Dropdown Menu
@@ -52,12 +51,22 @@ function App() {
         position={position}
         opacity={opacity}
       />
-      <Link to="/gabagunta">Gaba</Link>
-      <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
-        <Title />
-        <Carousel />
-      </div>
-      <Grid />
+      <Routes>
+        <Route
+          exact
+          path="/Home"
+          render={() => (
+            <div>
+              <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
+                <Title />
+                <Carousel />
+              </div>
+              <Grid />
+            </div>
+          )}
+        />
+        <Route exact path="/WomansStyle" render={() => <Grid />} />
+      </Routes>
     </div>
   );
 }

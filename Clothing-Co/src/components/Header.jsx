@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import App from "../App";
 
 export default function Header(props) {
   return (
     <div className=" w-11/12  flex lg:justify-around items-center lg:flex-row flex-col">
-      <Link to={App}>
+      <Link to="/Home">
         <div className="flex py-6 mx-0 lg:mx-28">
           <img
             className="w-32 cursor-pointer"
