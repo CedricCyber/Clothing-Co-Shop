@@ -2,9 +2,12 @@ export default function Grid() {
   return (
     <div className=" grid grid-cols-2 md:grid-cols-4 grid-rows-3 gap-5 md:gap-10 mx-5 md:mx-10 lg:mx-16 font-varela text-white font-bold pb-20">
       <div className=" bg-wImage7 bg-cover rounded-3xl cursor-pointer md:col-span-2 md:row-span-2 duration-700 opacity-90 hover:opacity-100 hover:m-3">
-        <p className="mt-5 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
-          35$
-        </p>
+        <div className="flex justify-between">
+          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+            35$
+          </p>
+          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+        </div>
       </div>
       <div className=" bg-mImage8 bg-cover rounded-3xl md:col-span-2 cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
         <p className="mt-5 ml-2 py-1 w-20 text-center rounded-2xl bg-black ">

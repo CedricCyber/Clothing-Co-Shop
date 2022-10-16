@@ -167,7 +167,7 @@ export default function Header(props) {
               <span>Style</span>
             </button>
           </Link>
-          <Link to="ShoppingCart">
+          <Link to="ShoppingBag">
             <button className="bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full flex justify-center items-center">
               <div>
                 <span>Shopping</span>

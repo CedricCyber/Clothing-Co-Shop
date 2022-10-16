@@ -40,8 +40,11 @@ function App() {
   ));
 
   // Shopping Cart functionality
-
   const [cart, setCart] = useState([]);
+
+  function addToCart() {
+    return setCart((prevCart) => [...prevCart, images.src]);
+  }
 
   return (
     <div className="background">
@@ -66,6 +69,8 @@ function App() {
           }
         />
         <Route exact path="/WomansStyle" element={<Grid />} />
+        <Route exact path="/MensStyle" element={<Grid />} />
+        <Route exact path="/ShoppingBag" element={<Grid />} />
       </Routes>
     </div>
   );
