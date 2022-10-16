@@ -55,7 +55,7 @@ function App() {
         <Route
           exact
           path="/Home"
-          render={() => (
+          element={
             <div>
               <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
                 <Title />
@@ -63,9 +63,9 @@ function App() {
               </div>
               <Grid />
             </div>
-          )}
+          }
         />
-        <Route exact path="/WomansStyle" render={() => <Grid />} />
+        <Route exact path="/WomansStyle" element={<Grid />} />
       </Routes>
     </div>
   );
