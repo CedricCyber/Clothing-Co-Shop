@@ -19,28 +19,28 @@ export default function Carousel() {
       <div className="relative top-1/2  rounded-xl ">
         {/* <!-- Item 0 --> */}
         <img
-          src="./images/tl-w-wht.jpg"
+          src="./womansStyle/strippedshirt.jpg"
           className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 0 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 1 --> */}
         <img
-          src="./images/tl-m-blk.jpg"
+          src="./womansStyle/jewlery.jpg"
           className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 1 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 2 --> */}
         <img
-          src="./images/tl-w-wht2.jpg"
+          src="./mensStyle/strippedshirt.jpg"
           className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 2 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 3 --> */}
         <img
-          src="./images/tl-m-wht.jpg"
+          src="./womansStyle/whitedress.jpg"
           className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 3 ? { opacity: 1 } : { opacity: 0 }}
