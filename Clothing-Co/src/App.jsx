@@ -6,6 +6,8 @@ import Carousel from "./components/Carousel";
 import Title from "./components/Title";
 import Grid from "./components/Grid";
 import { Routes, Route } from "react-router-dom";
+import WomansGrid from "./components/WomansGrid.jsx";
+import MensGrid from "./components/MensGrid.jsx";
 
 function App() {
   // Mobile Dropdown Menu
@@ -68,8 +70,8 @@ function App() {
             </div>
           }
         />
-        <Route exact path="/WomansStyle" element={<Grid />} />
-        <Route exact path="/MensStyle" element={<Grid />} />
+        <Route exact path="/WomansStyle" element={<WomansGrid />} />
+        <Route exact path="/MensStyle" element={<MensGrid />} />
         <Route exact path="/ShoppingBag" element={<Grid />} />
       </Routes>
     </div>

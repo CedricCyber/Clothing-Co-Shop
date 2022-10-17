@@ -16,32 +16,32 @@ export default function Carousel() {
     // Carousel
     <div className=" w-8/12 md:w-3/12 lg:w-4/12 aspect-[9/16] mt-10 md:mt-0 relative  cursor-pointer">
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative top-1/2  rounded-xl ">
+      <div className="relative top-1/2">
         {/* <!-- Item 0 --> */}
         <img
           src="./womansStyle/strippedshirt.jpg"
-          className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  duration-700 ease-in-out"
+          className="absolute rounded-3xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 0 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 1 --> */}
         <img
           src="./womansStyle/jewlery.jpg"
-          className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
+          className="absolute rounded-3xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 1 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 2 --> */}
         <img
           src="./mensStyle/strippedshirt.jpg"
-          className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
+          className="absolute rounded-3xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 2 ? { opacity: 1 } : { opacity: 0 }}
         />
         {/* <!-- Item 3 --> */}
         <img
           src="./womansStyle/whitedress.jpg"
-          className="absolute rounded-xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
+          className="absolute rounded-3xl block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 duration-700 ease-in-out"
           alt="..."
           style={slidePosition === 3 ? { opacity: 1 } : { opacity: 0 }}
         />
