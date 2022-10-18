@@ -42,10 +42,9 @@ function App() {
   ));
 
   // Shopping Cart functionality
-  const [cart, setCart] = useState([]);
-
+  const [cart, setCart] = useState(["Hello"]);
   function addToCart() {
-    return setCart((prevCart) => [...prevCart, images.src]);
+    return setCart((prevCart) => [...prevCart, "Goodbye"]);
   }
 
   return (

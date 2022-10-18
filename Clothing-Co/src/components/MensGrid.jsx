@@ -1,6 +1,6 @@
 export default function MensGrid() {
   return (
-    <div className=" grid grid-cols-2 md:grid-cols-4 grid-rows-3 gap-5 md:gap-10 mx-5 md:mx-10 lg:mx-16 font-varela text-white font-bold pb-20">
+    <div className=" grid grid-cols-2 md:grid-cols-4 grid-rows-3 gap-5 md:gap-10 mx-5 md:mx-10 lg:mx-16 font-varela text-white font-bold pb-20 mt-20 md:mt-36 lg:mt-20">
       <div className=" bg-mImage8 bg-cover rounded-3xl cursor-pointer md:col-span-2 md:row-span-2 duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
