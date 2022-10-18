@@ -8,7 +8,7 @@ export default function Grid(props) {
           </p>
           <img
             className="w-10 mr-2 mt-5"
-            id="bg-wImage7"
+            id="bg-wImage7 w-10"
             onClick={props.addToCart}
             src="./images/whitebag.png"
           />
