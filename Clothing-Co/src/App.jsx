@@ -43,9 +43,10 @@ function App() {
   ));
 
   // Shopping Cart functionality
-  const [cart, setCart] = useState(["Hello", "Goodbye"]);
-  function addToCart() {
-    return setCart((prevCart) => [...prevCart, "Goodbye"]);
+  const [cart, setCart] = useState([]);
+  function addToCart(e) {
+    console.log(e.target);
+    return setCart((prevCart) => [...prevCart, e.target.id]);
   }
 
   return (
@@ -65,8 +66,9 @@ function App() {
               <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
                 <Title />
                 <Carousel />
+                {console.log(cart)}
               </div>
-              <Grid />
+              <Grid addToCart={addToCart} />
             </div>
           }
         />
