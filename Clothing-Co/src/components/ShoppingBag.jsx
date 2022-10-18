@@ -1,12 +1,11 @@
 export default function ShoppingBag(props) {
-  return (
-    <div>
-      {props.Cart}.map(
+  function createCart() {
+    return props.cart.map((item) => (
       <div>
-        <img />
-        <p></p>
+        <p>item</p>
       </div>
-      )
-    </div>
-  );
+    ));
+  }
+
+  return [createCart()];
 }
