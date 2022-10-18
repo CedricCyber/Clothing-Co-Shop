@@ -8,6 +8,7 @@ import Grid from "./components/Grid";
 import { Routes, Route } from "react-router-dom";
 import WomansGrid from "./components/WomansGrid.jsx";
 import MensGrid from "./components/MensGrid.jsx";
+import ShoppingBag from "./components/ShoppingBag.jsx";
 
 function App() {
   // Mobile Dropdown Menu
@@ -42,7 +43,7 @@ function App() {
   ));
 
   // Shopping Cart functionality
-  const [cart, setCart] = useState(["Hello"]);
+  const [cart, setCart] = useState(["Hello", "Goodbye"]);
   function addToCart() {
     return setCart((prevCart) => [...prevCart, "Goodbye"]);
   }
@@ -71,7 +72,11 @@ function App() {
         />
         <Route exact path="/WomansStyle" element={<WomansGrid />} />
         <Route exact path="/MensStyle" element={<MensGrid />} />
-        <Route exact path="/ShoppingBag" element={<Grid />} />
+        <Route
+          exact
+          path="/ShoppingBag"
+          element={<ShoppingBag cart={cart} />}
+        />
       </Routes>
     </div>
   );
