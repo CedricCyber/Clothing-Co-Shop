@@ -44,9 +44,19 @@ function App() {
 
   // Shopping Cart functionality
   const [cart, setCart] = useState([]);
+  const [price, setPrice] = useState([]);
   function addToCart(e) {
-    console.log(e.target);
-    return setCart((prevCart) => [...prevCart, e.target.id]);
+    console.log(e.target.previousSibling.id);
+    console.log(e);
+    console.log(price);
+    return (
+      setCart((prevCart) => [...prevCart, e.target.id]),
+      setPrice((prevPrice) => [...prevPrice, e.target.previousSibling.id])
+    );
+  }
+
+  function addPrice(e) {
+    return;
   }
 
   return (
@@ -66,7 +76,6 @@ function App() {
               <div className="flex flex-col items-center md:flex-row md:justify-around w-8/12 mx-auto mb-10">
                 <Title />
                 <Carousel />
-                {console.log(cart)}
               </div>
               <Grid addToCart={addToCart} />
             </div>
@@ -77,7 +86,7 @@ function App() {
         <Route
           exact
           path="/ShoppingBag"
-          element={<ShoppingBag cart={cart} />}
+          element={<ShoppingBag price={price} cart={cart} />}
         />
       </Routes>
     </div>
