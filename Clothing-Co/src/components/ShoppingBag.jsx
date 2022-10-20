@@ -17,6 +17,7 @@ export default function ShoppingBag(props) {
     const removeButton = props.cart.map((item, index) => (
       <button
         key={index}
+        onClick={props.removeFromCart}
         className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer hover:underline"
       >
         Remove
@@ -36,7 +37,6 @@ export default function ShoppingBag(props) {
         <div className=" flex mt-20 w-11/12 mx-auto ">
           <div className="flex w-1/3 items-center flex-col gap-10 ">
             {itemPicture}
-            {}
           </div>
           <div className="flex w-1/3 items-center flex-col gap-10 justify-around">
             {itemPrice}

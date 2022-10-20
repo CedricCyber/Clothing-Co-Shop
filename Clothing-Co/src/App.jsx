@@ -48,16 +48,20 @@ function App() {
   function addToCart(e) {
     // console.log(cart);
     // console.log(price);
+
     return (
       setCart((prevCart) => [...prevCart, e.target.id]),
       setPrice((prevPrice) => [...prevPrice, e.target.previousSibling.id])
     );
   }
-
-  function addPrice(e) {
-    return;
+  // Remove from Cart
+  function removeFromCart(e) {
+    {
+      console.log(e.target.parentElement.);
+      console.log(e);
+    }
+    // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
   }
-
   return (
     <div className="background">
       <Header
@@ -93,7 +97,13 @@ function App() {
         <Route
           exact
           path="/ShoppingBag"
-          element={<ShoppingBag price={price} cart={cart} />}
+          element={
+            <ShoppingBag
+              removeFromCart={removeFromCart}
+              price={price}
+              cart={cart}
+            />
+          }
         />
       </Routes>
     </div>
