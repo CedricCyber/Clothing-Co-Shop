@@ -30,6 +30,8 @@ module.exports = {
         wImage6: "url('./womansStyle/jewlery.jpg')",
         wImage7: "url('./womansStyle/yellowjoggers.jpg')",
         wImage8: "url('./womansStyle/strippedshirt.jpg')",
+        wImage9: "url('./womansStyle/whitesweater.jpg')",
+        wImage10: "url('./womansStyle/stripedsweater.jpg')",
       },
       inset: {
         "10p": "10%",

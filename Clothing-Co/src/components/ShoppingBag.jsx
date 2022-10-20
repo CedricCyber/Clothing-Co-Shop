@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { useState } from "react";
-
 export default function ShoppingBag(props) {
   // Maping through arrays to create Shopping bag items individually
   // Cart Item Styling done here
@@ -36,7 +33,7 @@ export default function ShoppingBag(props) {
     // Render Cart Items and Layout
     return (
       <div>
-        <div className=" flex mt-20 w-11/12 mx-auto">
+        <div className=" flex mt-20 w-11/12 mx-auto ">
           <div className="flex w-1/3 items-center flex-col gap-10 ">
             {itemPicture}
             {}
@@ -49,7 +46,7 @@ export default function ShoppingBag(props) {
           </div>
         </div>
         {/* Render total price and Layout */}
-        <div className=" flex my-20 w-11/12 mx-auto">
+        <div className=" flex my-20 w-11/12 mx-auto border-t-2 pt-5 border-white">
           <div className="flex w-1/3 items-center flex-col gap-10 justify-around">
             <p className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer">
               Bag Total:

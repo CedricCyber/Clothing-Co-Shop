@@ -1,28 +1,52 @@
-export default function MensGrid() {
+export default function MensGrid(props) {
   return (
     <div className=" grid grid-cols-2 md:grid-cols-4 grid-rows-3 gap-5 md:gap-10 mx-5 md:mx-10 lg:mx-16 font-varela text-white font-bold pb-20 mt-20 md:mt-36 lg:mt-20">
       <div className=" bg-mImage8 bg-cover rounded-3xl cursor-pointer md:col-span-2 md:row-span-2 duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={35}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             35$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage8 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-mImage5 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
         <div className="flex justify-between">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black ">
+          <p
+            id={20}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black "
+          >
             20$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage5 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-mImage7 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black">
+          <p
+            id={30}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
+          >
             30$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className="relative">
@@ -36,18 +60,34 @@ export default function MensGrid() {
       </div>
       <div className=" bg-mImage4 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black">
+          <p
+            id={30}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
+          >
             30$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-mImage3 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100   hover:m-3">
         <div className="flex justify-between">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={75}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             75$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className="relative  ">
@@ -61,18 +101,34 @@ export default function MensGrid() {
       </div>
       <div className=" bg-mImage1 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={120}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             120$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage1 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-mImage6 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={45}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             45$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage6 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
     </div>

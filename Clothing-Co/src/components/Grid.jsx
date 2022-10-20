@@ -17,12 +17,20 @@ export default function Grid(props) {
           />
         </div>
       </div>
-      <div className=" bg-mImage8 bg-cover rounded-3xl md:col-span-2 cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
+      <div className=" bg-mImage4 bg-cover rounded-3xl md:col-span-2 cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
         <div className="flex justify-between mx-2">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black ">
+          <p
+            id={20}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black "
+          >
             20$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className="relative">
@@ -34,28 +42,52 @@ export default function Grid(props) {
           SOLD OUT
         </p>
       </div>
-      <div className=" bg-mImage5 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
+      <div className=" bg-wImage9 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between mx-2">
-          <p className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black">
+          <p
+            id={30}
+            className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
+          >
             30$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-wImage9 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-mImage3 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100  md:col-span-2 hover:m-3">
         <div className="flex justify-between mx-2">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={75}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             75$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className=" bg-wImage4 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100  md:col-span-2 md:row-span-2 hover:m-3">
         <div className="flex justify-between mx-2">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={120}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             120$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-wImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
       <div className="relative  ">
@@ -67,12 +99,20 @@ export default function Grid(props) {
           SOLD OUT
         </p>
       </div>
-      <div className=" bg-mImage4 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
+      <div className=" bg-mImage2 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between mx-2">
-          <p className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black">
+          <p
+            id={45}
+            className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
+          >
             45$
           </p>
-          <img className="w-10 mr-2 mt-5" src="./images/whitebag.png" />
+          <img
+            id="bg-mImage2 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            onClick={props.addToCart}
+            className="w-10 mr-2 mt-5"
+            src="./images/whitebag.png"
+          />
         </div>
       </div>
     </div>

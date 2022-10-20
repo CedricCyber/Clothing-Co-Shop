@@ -80,8 +80,16 @@ function App() {
             </div>
           }
         />
-        <Route exact path="/WomansStyle" element={<WomansGrid />} />
-        <Route exact path="/MensStyle" element={<MensGrid />} />
+        <Route
+          exact
+          path="/WomansStyle"
+          element={<WomansGrid addToCart={addToCart} />}
+        />
+        <Route
+          exact
+          path="/MensStyle"
+          element={<MensGrid addToCart={addToCart} />}
+        />
         <Route
           exact
           path="/ShoppingBag"
