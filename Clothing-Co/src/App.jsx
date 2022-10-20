@@ -46,9 +46,8 @@ function App() {
   const [cart, setCart] = useState([]);
   const [price, setPrice] = useState([]);
   function addToCart(e) {
-    console.log(e.target.previousSibling.id);
-    console.log(e);
-    console.log(price);
+    // console.log(cart);
+    // console.log(price);
     return (
       setCart((prevCart) => [...prevCart, e.target.id]),
       setPrice((prevPrice) => [...prevPrice, e.target.previousSibling.id])

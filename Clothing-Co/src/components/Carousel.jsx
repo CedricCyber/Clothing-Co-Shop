@@ -11,7 +11,7 @@ export default function Carousel() {
   function prevPosition() {
     setSlidePosition((prev) => (prev === 0 ? 3 : prev - 1));
   }
-  console.log(slidePosition);
+  // console.log(slidePosition);
   return (
     // Carousel
     <div className=" w-8/12 md:w-3/12 lg:w-4/12 aspect-[9/16] mt-10 md:mt-0 relative  cursor-pointer">

@@ -11,7 +11,7 @@ export default function Grid(props) {
           </p>
           <img
             className="w-10 mr-2 mt-5"
-            id=""
+            id="bg-wImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
             src="./images/whitebag.png"
           />
