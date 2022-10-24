@@ -10,7 +10,7 @@ export default function Grid(props) {
             35$
           </p>
           <img
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 visited: hover:animate-pulse active:animate-none"
             id="bg-wImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
             src="./images/whitebag.png"

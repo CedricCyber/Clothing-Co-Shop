@@ -55,13 +55,27 @@ function App() {
     );
   }
   // Remove from Cart
+
   function removeFromCart(e) {
-    {
-      console.log(e.target.parentElement.);
-      console.log(e);
-    }
+    setPrice((prevPrice) => {
+      prevPrice.filter((price, index, prevPrice) => {
+        return e.target.attributes.index.value !== index && price;
+      });
+    });
+    setCart((prevCart) => {
+      prevCart.filter((cart, index, prevCart) => {
+        return e.target.attributes.index.value !== index && cart;
+      });
+    });
+    console.log(e.target.attributes.index.value);
+    console.log("hello");
+    console.log("hello");
+    // setPrice((prevPrice) => (
+    //   prevPrice.filter( prevPrice !== e.target.index)
+    // )
     // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
   }
+
   return (
     <div className="background">
       <Header

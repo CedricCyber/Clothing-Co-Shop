@@ -9,14 +9,16 @@ export default function ShoppingBag(props) {
     const itemPrice = props.price.map((cost, index) => (
       <p
         key={index}
+        index={index}
         className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer"
       >
         {cost}$
       </p>
     ));
-    const removeButton = props.cart.map((item, index) => (
+    const removeButton = props.price.map((item, index) => (
       <button
         key={index}
+        index={index}
         onClick={props.removeFromCart}
         className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer hover:underline"
       >
