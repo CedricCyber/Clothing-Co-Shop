@@ -38,10 +38,6 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const images = imageData.map((image, index) => (
-    <img src={image.imagePath} key={index} className="w-20"></img>
-  ));
-
   // Shopping Cart functionality
   const [cart, setCart] = useState([]);
   const [price, setPrice] = useState([]);
@@ -56,20 +52,36 @@ function App() {
   }
   // Remove from Cart
 
-  function removeFromCart(e) {
+  function removeFromCart(e, array) {
+    let buttonIndex = e.target.attributes.index.value;
+
     setPrice((prevPrice) => {
-      prevPrice.filter((price, index, prevPrice) => {
-        return e.target.attributes.index.value !== index && price;
+      prevPrice.filter((item, index, array) => {
+        {
+          for (let i = 0; i < prevPrice.length; i++) {
+            if (buttonIndex !== index[i]) {
+              item;
+            }
+          }
+        }
       });
     });
-    setCart((prevCart) => {
-      prevCart.filter((cart, index, prevCart) => {
-        return e.target.attributes.index.value !== index && cart;
-      });
-    });
-    console.log(e.target.attributes.index.value);
-    console.log("hello");
-    console.log("hello");
+
+    // setCart((prevCart) => {
+
+    // });
+
+    // Attempt 2 //
+
+    // prevPrice.filter(
+    //   (item, index) => e.target.attributes.index.value !== index && item
+    // );
+    // prevCart.filter(
+    //   (item, index) => e.target.attributes.index.value !== index && item
+    // );
+
+    // Attempt 1 //
+
     // setPrice((prevPrice) => (
     //   prevPrice.filter( prevPrice !== e.target.index)
     // )
@@ -124,3 +136,35 @@ function App() {
   );
 }
 export default App;
+
+// I'm trying to create a remove from cart feature to a React shopping cart however I keep getting an error TypeError message saying Cannot read properties of undefined(reading'map')
+
+// function App() {
+
+//      // Shopping Cart functionality
+//      const [cart, setCart] = useState([]);
+//      const [price, setPrice] = useState([]);
+//      function addToCart(e) {
+
+//        return (
+//          setCart((prevCart) => [...prevCart, e.target.id]),
+//          setPrice((prevPrice) => [...prevPrice, e.target.previousSibling.id])
+//        );
+//      }
+//      // Remove from Cart
+
+//      function removeFromCart(e) {
+//        setPrice((prevPrice) => {
+//          [
+//            ...prevPrice.filter(
+//            (price, index) => e.target.attributes.index.value !== index && price
+//          ),
+//         ];
+//        });
+//        setCart((prevCart) => {
+//          [
+//            ...prevCart.filter(
+//              (cart, index) => e.target.attributes.index.value !== index && cart
+//            ),
+//          ];
+//        });

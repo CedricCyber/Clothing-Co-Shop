@@ -15,7 +15,7 @@ export default function ShoppingBag(props) {
         {cost}$
       </p>
     ));
-    const removeButton = props.price.map((item, index) => (
+    const removeButton = props.price.map((button, index) => (
       <button
         key={index}
         index={index}
