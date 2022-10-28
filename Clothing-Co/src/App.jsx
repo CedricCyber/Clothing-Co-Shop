@@ -41,32 +41,34 @@ function App() {
   // Shopping Cart functionality
   const [cart, setCart] = useState([]);
   const [price, setPrice] = useState([]);
+  const [place, setPlace] = useState(0);
+  const [count, setCount] = useState(0);
+
+  function addCount() {
+    setCount((prevCount) => prevCount + 1);
+  }
   function addToCart(e) {
     // console.log(cart);
     // console.log(price);
 
+    addCount();
     return (
-      setCart((prevCart) => [...prevCart, e.target.id]),
-      setPrice((prevPrice) => [...prevPrice, e.target.previousSibling.id])
+      setCart((prevCart) => [...prevCart, { name: e.target.id, place: count }]),
+      setPrice((prevPrice) => [
+        ...prevPrice,
+        { name: e.target.previousSibling.id, place: setPlace(place + 1) },
+      ])
     );
   }
   // Remove from Cart
 
-  function removeFromCart(e, array) {
-    let buttonIndex = e.target.attributes.index.value;
-
+  const removeFromCart = () => {
     setPrice((prevPrice) => {
-      prevPrice.filter((item, index, array) => {
-        {
-          for (let i = 0; i < prevPrice.length; i++) {
-            if (buttonIndex !== index[i]) {
-              item;
-            }
-          }
-        }
+      prevPrice.filter((item) => item.place !== 0);
+    }),
+      setCart((prevCart) => {
+        prevCart.filter((item) => item.place !== 0);
       });
-    });
-
     // setCart((prevCart) => {
 
     // });
@@ -86,7 +88,7 @@ function App() {
     //   prevPrice.filter( prevPrice !== e.target.index)
     // )
     // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
-  }
+  };
 
   return (
     <div className="background">

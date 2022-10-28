@@ -4,10 +4,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage8 bg-cover rounded-3xl cursor-pointer md:col-span-2 md:row-span-2 duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={35}
+            id={36}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            35$
+            36$
           </p>
           <img
             id="bg-mImage8 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -20,10 +20,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage5 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
         <div className="flex justify-between">
           <p
-            id={20}
+            id={22}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black "
           >
-            20$
+            22$
           </p>
           <img
             id="bg-mImage5 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -36,10 +36,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage7 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={30}
+            id={32}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
           >
-            30$
+            32$
           </p>
           <img
             id="bg-mImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -61,10 +61,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage4 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={30}
+            id={38}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
           >
-            30$
+            38$
           </p>
           <img
             id="bg-mImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -77,10 +77,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage3 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100   hover:m-3">
         <div className="flex justify-between">
           <p
-            id={75}
+            id={74}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            75$
+            74$
           </p>
           <img
             id="bg-mImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -102,10 +102,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage1 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={120}
+            id={122}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            120$
+            122$
           </p>
           <img
             id="bg-mImage1 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -118,10 +118,10 @@ export default function MensGrid(props) {
       <div className=" bg-mImage6 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={45}
+            id={48}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            45$
+            48$
           </p>
           <img
             id="bg-mImage6 bg-cover w-48 h-72 rounded-2xl cursor-pointer"

@@ -4,10 +4,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage3 bg-cover rounded-3xl cursor-pointer md:col-span-2 md:row-span-2 duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={35}
+            id={33}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            35$
+            33$
           </p>
           <img
             id="bg-wImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -20,10 +20,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage7 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3 ">
         <div className="flex justify-between">
           <p
-            id={20}
+            id={21}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black "
           >
-            20$
+            21$
           </p>
           <img
             id="bg-wImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -36,10 +36,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage5 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={30}
+            id={37}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
           >
-            30$
+            37$
           </p>
           <img
             id="bg-wImage5 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -61,10 +61,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage1 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={30}
+            id={39}
             className="mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl z-10 bg-black"
           >
-            30$
+            39$
           </p>
           <img
             id="bg-wImage1 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -77,10 +77,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage6 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100   hover:m-3">
         <div className="flex justify-between">
           <p
-            id={75}
+            id={73}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            75$
+            73$
           </p>
           <img
             id="bg-wImage6 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -102,10 +102,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage4 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={120}
+            id={127}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            120$
+            127$
           </p>
           <img
             id="bg-wImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
@@ -118,10 +118,10 @@ export default function WomansGrid(props) {
       <div className=" bg-wImage8 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between">
           <p
-            id={45}
+            id={43}
             className=" mt-5 mb-2 ml-2 py-1 w-20 text-center rounded-2xl bg-black"
           >
-            45$
+            43$
           </p>
           <img
             id="bg-wImage8 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
