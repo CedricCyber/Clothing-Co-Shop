@@ -8,32 +8,41 @@ export default function ShoppingBag(props) {
     <div>
       <div className=" flex mt-20 w-11/12 mx-auto ">
         <div className="flex w-1/3 items-center flex-col gap-10 ">
-          {props.cart.map((item) => (
-            <div className={item.name} key={item.name}></div>
-          ))}
+          {props.cart.map(
+            (item) =>
+              item.inCart === true && (
+                <div className={item.name} key={item.name}></div>
+              )
+          )}
         </div>
         <div className="flex w-1/3 items-center flex-col gap-10 justify-around">
-          {props.price.map((cost, index) => (
-            <p
-              key={cost.name}
-              index={index}
-              className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer"
-            >
-              {cost.name}$
-            </p>
-          ))}
+          {props.cart.map(
+            (cost, index) =>
+              cost.inCart === true && (
+                <p
+                  key={cost.price}
+                  index={index}
+                  className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer"
+                >
+                  {cost.price}$
+                </p>
+              )
+          )}
         </div>
         <div className="flex w-1/3 items-center flex-col gap-10 justify-around">
-          {props.price.map((button, index) => (
-            <button
-              key={index}
-              index={index}
-              onClick={props.removeFromCart}
-              className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer hover:underline"
-            >
-              Remove
-            </button>
-          ))}
+          {props.cart.map(
+            (button, index) =>
+              button.inCart === true && (
+                <button
+                  key={button.name}
+                  index={index}
+                  onClick={props.removeFromCart}
+                  className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer hover:underline"
+                >
+                  Remove
+                </button>
+              )
+          )}
         </div>
       </div>
       {/* Render total price and Layout */}
@@ -45,8 +54,8 @@ export default function ShoppingBag(props) {
         </div>
         <div className="flex w-1/3 items-center flex-col gap-10 justify-around">
           <p className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer underline">
-            {props.price.reduce(
-              (prev, cur) => Number(prev) + Number(cur.name),
+            {props.cart.reduce(
+              (prev, cur) => Number(prev) + Number(cur.price),
               0
             )}
             $

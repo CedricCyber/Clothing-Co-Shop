@@ -36,7 +36,7 @@ export default function Grid(props) {
       <div className="relative">
         <img
           className=" rounded-3xl opacity-90 hover:opacity-100 duration-700 cursor-pointer "
-          src="./womansStyle/blackoutfit.jpg"
+          src="./images/blackoutfit.jpg"
         ></img>
         <p className="absolute top-5 left-3 py-1 px-2   bg-black rounded-2xl text-white">
           SOLD OUT
@@ -93,7 +93,7 @@ export default function Grid(props) {
       <div className="relative  ">
         <img
           className=" rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100"
-          src="./womansStyle/stripedblazer.jpg"
+          src="./images/stripedblazer.jpg"
         ></img>
         <p className="absolute top-5 left-3 py-1 px-2   bg-black rounded-2xl text-white">
           SOLD OUT

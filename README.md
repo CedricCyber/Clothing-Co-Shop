@@ -1,2 +1,3 @@
 # Clothing-Co-Shopping-UI
- Responsive clothing store UI
+
+Responsive clothing store UI
