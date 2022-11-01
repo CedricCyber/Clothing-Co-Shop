@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
-import imageData from "./components/imageData";
 import "./App.css";
 import Carousel from "./components/Carousel";
 import Title from "./components/Title";
 import Grid from "./components/Grid";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import WomansGrid from "./components/WomansGrid.jsx";
 import MensGrid from "./components/MensGrid.jsx";
 import ShoppingBag from "./components/ShoppingBag.jsx";
@@ -40,44 +39,53 @@ function App() {
 
   // Shopping Cart functionality
   const [cart, setCart] = useState([]);
-  const [price, setPrice] = useState([]);
-
+  const [count, setCount] = useState(0);
   function addToCart(e) {
     // console.log(cart);
     // console.log(price);
-
+    setCount((prevCount) => prevCount + 1);
     return setCart((prevCart) => [
       ...prevCart,
-      { name: e.target.id, price: e.target.previousSibling.id, inCart: true },
+      {
+        id: count,
+        name: e.target.id,
+        price: e.target.previousSibling.id,
+        inCart: true,
+      },
     ]);
   }
   // Remove from Cart
   const removeFromCart = (e) => {
-    // setCart((prevCart) => [...prevCart]);
-    // e.target.attributes.index.value
-    // Attempt 3
-    // setPrice((prevPrice) => {
-    //   prevPrice.filter((item) => item.place !== 0);
-    // }),
-    //   setCart((prevCart) => {
-    //     prevCart.filter((item) => item.place !== 0);
-    //   });
-    // setCart((prevCart) => {
-    // });
-    // Attempt 2 //
-    // prevPrice.filter(
-    //   (item, index) => e.target.attributes.index.value !== index && item
-    // );
-    // prevCart.filter(
-    //   (item, index) => e.target.attributes.index.value !== index && item
-    // );
-    // Attempt 1 //
-    // setPrice((prevPrice) => (
-    //   prevPrice.filter( prevPrice !== e.target.index)
-    // )
-    // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
+    return setCart((prevCart) => {
+      return prevCart.map((item) =>
+        item.id == e.target.id ? { ...item, inCart: false, price: 0 } : item
+      );
+    });
   };
 
+  // [...prevCart, ...prevCart[0],{ inCart: false }]);
+
+  // Attempt 3
+  // setPrice((prevPrice) => {
+  //   prevPrice.filter((item) => item.place !== 0);
+  // }),
+  //   setCart((prevCart) => {
+  //     prevCart.filter((item) => item.place !== 0);
+  //   });
+  // setCart((prevCart) => {
+  // });
+  // Attempt 2 //
+  // prevPrice.filter(
+  //   (item, index) => e.target.attributes.index.value !== index && item
+  // );
+  // prevCart.filter(
+  //   (item, index) => e.target.attributes.index.value !== index && item
+  // );
+  // Attempt 1 //
+  // setPrice((prevPrice) => (
+  //   prevPrice.filter( prevPrice !== e.target.index)
+  // )
+  // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
   return (
     <div className="background">
       <Header
@@ -87,6 +95,7 @@ function App() {
         opacity={opacity}
       />
       <Routes>
+        <Route exact path="/" element={<Navigate to="/Home" />} />
         <Route
           exact
           path="/Home"
@@ -116,7 +125,7 @@ function App() {
           element={
             <ShoppingBag
               removeFromCart={removeFromCart}
-              price={price}
+              count={count}
               cart={cart}
             />
           }

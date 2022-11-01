@@ -10,7 +10,7 @@ export default function Grid(props) {
             35$
           </p>
           <img
-            className="w-10 mr-2 mt-5 visited: hover:animate-pulse active:animate-none"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             id="bg-wImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
             src="./images/whitebag.png"
@@ -28,7 +28,7 @@ export default function Grid(props) {
           <img
             id="bg-mImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -53,7 +53,7 @@ export default function Grid(props) {
           <img
             id="bg-wImage9 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -69,7 +69,7 @@ export default function Grid(props) {
           <img
             id="bg-mImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -85,7 +85,7 @@ export default function Grid(props) {
           <img
             id="bg-wImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -99,7 +99,7 @@ export default function Grid(props) {
           SOLD OUT
         </p>
       </div>
-      <div className=" bg-mImage2 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
+      <div className=" bg-mImage6 bg-cover rounded-3xl cursor-pointer duration-700 opacity-90 hover:opacity-100 hover:m-3">
         <div className="flex justify-between mx-2">
           <p
             id={45}
@@ -108,9 +108,9 @@ export default function Grid(props) {
             45$
           </p>
           <img
-            id="bg-mImage2 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
+            id="bg-mImage6 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>

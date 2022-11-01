@@ -21,7 +21,6 @@ export default function ShoppingBag(props) {
               cost.inCart === true && (
                 <p
                   key={cost.price}
-                  index={index}
                   className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer"
                 >
                   {cost.price}$
@@ -35,7 +34,7 @@ export default function ShoppingBag(props) {
               button.inCart === true && (
                 <button
                   key={button.name}
-                  index={index}
+                  id={index}
                   onClick={props.removeFromCart}
                   className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer hover:underline"
                 >

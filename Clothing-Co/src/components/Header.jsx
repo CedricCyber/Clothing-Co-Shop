@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header(props) {
   return (
     <div className=" w-11/12  flex lg:justify-around items-center lg:flex-row flex-col">
-      <Link to="/Home">
+      <Link exact to="/Home">
         <div className="flex py-6 mx-0 lg:mx-28">
           <img
             className="w-32 cursor-pointer"
@@ -85,9 +85,10 @@ export default function Header(props) {
        "
                 aria-labelledby="dropdownMenuButton2"
               >
-                <li>
-                  <a
-                    className="
+                <Link exact to="/WomansStyle">
+                  <li>
+                    <a
+                      className="
              dropdown-item
              text-sm
              py-2
@@ -99,17 +100,41 @@ export default function Header(props) {
              bg-transparent
              text-white
              hover:bg-blue-300
-           "
-                    href="#"
-                  >
-                    Womans Clothes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="
-             dropdown-item
-             text-sm
+             "
+                      href="#"
+                    >
+                      Womans Style
+                    </a>
+                  </li>
+                </Link>
+                <Link exact to="/MensStyle">
+                  <li>
+                    <a
+                      className="
+                    dropdown-item
+                    text-sm
+                    py-2
+                    px-4
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-white
+                    hover:bg-blue-300
+                    "
+                      href="#"
+                    >
+                      Mens Style
+                    </a>
+                  </li>
+                </Link>
+                <Link exact to="/ShoppingBag">
+                  <li>
+                    <a
+                      className="
+                    dropdown-item
+                    text-sm
              py-2
              px-4
              font-normal
@@ -119,32 +144,13 @@ export default function Header(props) {
              bg-transparent
              text-white
              hover:bg-blue-300
-           "
-                    href="#"
-                  >
-                    Mens Clothes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="
-             dropdown-item
-             text-sm
-             py-2
-             px-4
-             font-normal
-             block
-             w-full
-             whitespace-nowrap
-             bg-transparent
-             text-white
-             hover:bg-blue-300
-           "
-                    href="#"
-                  >
-                    Shopping Cart
-                  </a>
-                </li>
+             "
+                      href="#"
+                    >
+                      Shopping Bag
+                    </a>
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -153,21 +159,21 @@ export default function Header(props) {
 
       {props.windowSize >= 1150 && (
         <div className="flex items-center justify-around text-white">
-          <Link to="WomansStyle">
+          <Link exact to="/WomansStyle">
             <button className="bg-blue-400 drop-shadow-lg  transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full ">
               <span>Womans</span>
               <br></br>
               <span>Style</span>
             </button>
           </Link>
-          <Link to="MensStyle">
+          <Link exact to="/MensStyle">
             <button className="mx-20 bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-12 rounded-full ">
               <span>Mens</span>
               <br></br>
               <span>Style</span>
             </button>
           </Link>
-          <Link to="ShoppingBag">
+          <Link exact to="/ShoppingBag">
             <button className="bg-blue-400 drop-shadow-lg transition duration-500 hover:bg-blue-300 py-2 px-10 rounded-full flex justify-center items-center">
               <div>
                 <span>Shopping</span>

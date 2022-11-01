@@ -12,7 +12,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage3 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -28,7 +28,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage7 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -44,7 +44,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage5 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -69,7 +69,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage1 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -85,7 +85,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage6 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -110,7 +110,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage4 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
@@ -126,7 +126,7 @@ export default function WomansGrid(props) {
           <img
             id="bg-wImage8 bg-cover w-48 h-72 rounded-2xl cursor-pointer"
             onClick={props.addToCart}
-            className="w-10 mr-2 mt-5"
+            className="w-10 mr-2 mt-5 active:animate-ping"
             src="./images/whitebag.png"
           />
         </div>
