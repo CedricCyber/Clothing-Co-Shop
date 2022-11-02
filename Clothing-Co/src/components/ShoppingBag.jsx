@@ -71,17 +71,3 @@ export default function ShoppingBag(props) {
     </div>
   );
 }
-//   props.cart.map((item) =>
-//     props.price.map((cost, index) => (
-//       <div className="flex justify-around items-center mt-20">
-//         <div className={item} key={index}></div>
-//         <p className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer">
-//           {cost}$
-//         </p>
-//         <button className="text-white text-2xl md:text-3xl  drop-shadow-lg font-varela font-bold mt-20 md:mt-0 cursor-pointer">
-//           Remove
-//         </button>
-//       </div>
-//     ))
-//   );
-// }

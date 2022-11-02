@@ -63,29 +63,6 @@ function App() {
     });
   };
 
-  // [...prevCart, ...prevCart[0],{ inCart: false }]);
-
-  // Attempt 3
-  // setPrice((prevPrice) => {
-  //   prevPrice.filter((item) => item.place !== 0);
-  // }),
-  //   setCart((prevCart) => {
-  //     prevCart.filter((item) => item.place !== 0);
-  //   });
-  // setCart((prevCart) => {
-  // });
-  // Attempt 2 //
-  // prevPrice.filter(
-  //   (item, index) => e.target.attributes.index.value !== index && item
-  // );
-  // prevCart.filter(
-  //   (item, index) => e.target.attributes.index.value !== index && item
-  // );
-  // Attempt 1 //
-  // setPrice((prevPrice) => (
-  //   prevPrice.filter( prevPrice !== e.target.index)
-  // )
-  // return setCart((prevCart) => [...prevCart.splice(e.target.index, 1)]);
   return (
     <div className="background">
       <Header
